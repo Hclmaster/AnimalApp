@@ -7,11 +7,14 @@
     android:background="#C2C2C2"
     tools:context=".BrokerActivity">
 
+
     <ImageView
         android:id="@+id/captureImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
         android:layout_marginBottom="70dp" />
 
     <RelativeLayout
@@ -31,7 +34,8 @@
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:text="预测结果为: 虎 99.8%" />
+            android:onClick="openPredictWords"
+            tools:text="预测结果为: 虎 99.8%\nTop-2\nTop-3" />
 
         <ImageView
             android:id="@+id/imageView2"

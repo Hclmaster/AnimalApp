@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity {
             client.publish(pub_topic, msg.getBytes(), 0, false);
             Toast.makeText(HomeActivity.this, "Publish Successful!", Toast.LENGTH_LONG).show();
 
-            //Thread.sleep(20000);
+            setSubscription();
             // 打开另一个界面
             startActivity(intent);
         } catch (MqttException e) {

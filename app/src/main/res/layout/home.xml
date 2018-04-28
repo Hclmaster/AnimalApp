@@ -4,31 +4,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/animals_home_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="262dp"
+            android:layout_height="261dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/explore_title" />
+    </RelativeLayout>
 
-    <!-- 放center -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:textColor="@color/qmui_config_color_black"
+        android:gravity="center_horizontal"
+        android:textColor="#3F51B5"
         android:textSize="24sp"
+        android:shadowColor="#3F51B5"
+        android:shadowRadius="10"
+        android:shadowDx="5"
+        android:shadowDy="5"
         android:text="@string/home_intro_title"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textColor="@color/qmui_config_color_black"
-        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#424242"
+        android:textSize="18sp"
         android:text="@string/home_intro_text"/>
 
     <LinearLayout
@@ -40,6 +50,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/subscribe_btn"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            android:background="@drawable/buttonstyle"
             android:text="点击此处进行订阅"
             android:onClick="subscribeBtn"/>
     </LinearLayout>

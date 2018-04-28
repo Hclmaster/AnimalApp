@@ -7,8 +7,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="home_intro_title">欢迎来到Explore Animal App!</string>
-    <string name="home_intro_text">在这里你可以订阅某一个对话\n并且接收到来自硬件端照片的捕获结果\n</string>
+    <string name="home_intro_title">#我最想知道的动物?</string>
+    <string name="home_intro_text">在这里你可以控制硬件端拍照获取动物图像，并且接收到来自后端的识别结果</string>
 
     <string name="home_dingyue">请输入对应信息进行订阅!</string>
     <string name="title_activity_main2">Main2Activity</string>

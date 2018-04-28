@@ -9,18 +9,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:layout_width="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textColor="@color/qmui_config_color_black"
-            android:text="@string/home_dingyue"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/connect_logo_top2" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,14 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="9dp"
             android:src="@drawable/host"/>
-
-        <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="24sp"
-            android:textColor="@color/qmui_config_color_black"
-            android:text="Host: "/>-->
 
         <com.wrapp.floatlabelededittext.FloatLabeledEditText
             android:layout_width="match_parent"
@@ -75,14 +65,6 @@
             android:src="@drawable/port"
             android:layout_marginTop="9dp"/>
 
-        <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="24sp"
-            android:textColor="@color/qmui_config_color_black"
-            android:text="Port Number: "/>-->
-
         <com.wrapp.floatlabelededittext.FloatLabeledEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,14 +93,6 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_topic"
             android:layout_marginTop="9dp"/>
-
-        <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="24sp"
-            android:textColor="@color/qmui_config_color_black"
-            android:text="Topic: "/>-->
 
         <com.wrapp.floatlabelededittext.FloatLabeledEditText
             android:layout_width="match_parent"
