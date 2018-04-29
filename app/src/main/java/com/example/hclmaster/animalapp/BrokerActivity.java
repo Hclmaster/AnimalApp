@@ -118,6 +118,8 @@ public class BrokerActivity extends AppCompatActivity {
                     double fish = obj.getDouble("fish");
                     String img_url = obj.getString("img_url");
 
+                    System.out.println("img_url是什么呢? "+img_url);
+
                     double[] li = new double[5];
                     li[0] = tiger;
                     li[1] = dog;
@@ -150,6 +152,10 @@ public class BrokerActivity extends AppCompatActivity {
                     }
 
                     resultTxt.setText(first_key);
+                    // 先清除所有图片缓存,再进行下载!
+                    Picasso.get().invalidate(img_url);
+                    Picasso.get().load(img_url).into(imageView);
+
 
                     if(second_prob == tiger) first_key += "\nTop2: 虎: "+df.format(second_prob*100.0)+"%";
                     else if(second_prob == dog) first_key += "\nTop2: 狗: "+df.format(second_prob*100.0)+"%";
@@ -162,8 +168,6 @@ public class BrokerActivity extends AppCompatActivity {
                     else if(third_prob == cat) first_key += "\nTop3: 猫: "+df.format(third_prob*100.0)+"%";
                     else if(third_prob == bird) first_key += "\nTop3: 鸟: "+df.format(third_prob*100.0)+"%";
                     else if(third_prob == fish) first_key += "\nTop3: 鱼: "+df.format(third_prob*100.0)+"%";
-
-                    Picasso.get().load(img_url).into(imageView);
                 }
                 vibrator.vibrate(500);
                 myRingtone.play();
